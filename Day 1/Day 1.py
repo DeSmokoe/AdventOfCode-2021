@@ -26,8 +26,5 @@ def calculate_increases_windows(input_list):
     return counter
 
 
-lst = get_readings()
-Depths = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
-
-print(calculate_increases_solo(lst))  # Puzzle 1
-print(calculate_increases_windows(lst))  # puzzle 2
+print(calculate_increases_solo(get_readings()))  # Puzzle 1
+print(calculate_increases_windows(get_readings()))  # puzzle 2
