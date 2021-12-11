@@ -35,7 +35,6 @@ def split_boards(boards_list):  # Geeft instructies als lijst en borden als lijs
                 boards_3d[k][j].append(boards_list[j+k*5][i])
 
     numbers = numbers.split(",")
-
     return numbers, boards_3d
 
 def play_bingo(numbers, boards_3d):
@@ -66,10 +65,10 @@ def play_bingo(numbers, boards_3d):
                         first_rows = copy.deepcopy(rows[i])
                         first_columns = copy.deepcopy(columns[i])
 
-                    if i not in deleted_boards:
+                    if i not in deleted_boards:  # Tel borden niet mee indien hier al bingo gehaald is
                         completed_boards += 1
                         deleted_boards.append(i)
-                if completed_boards == boards_amount:
+                if completed_boards == boards_amount:  # Stop als elk bord bingo heeft
                     last_value, last_rows, last_columns = value, rows[i], columns[i]
                     return first_rows, first_value, first_columns, last_value, last_rows, last_columns
 
