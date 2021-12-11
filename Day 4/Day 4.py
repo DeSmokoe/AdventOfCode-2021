@@ -71,9 +71,9 @@ def play_bingo(numbers, boards_3d):
                         deleted_boards.append(i)
                 if completed_boards == boards_amount:
                     last_value, last_rows, last_columns = value, rows[i], columns[i]
-                    return first_rows, first_value, first_columns, last_value, last_rows, last_columns, i+1
+                    return first_rows, first_value, first_columns, last_value, last_rows, last_columns
 
-def calculate_score(first_rows, first_value, first_columns, last_value, last_rows, last_columns, i):
+def calculate_score(first_rows, first_value, first_columns, last_value, last_rows, last_columns):
     # Eerste
     flat_list_rows = flatten(first_rows)
     flat_list_columns = flatten(first_columns)
@@ -90,6 +90,5 @@ def calculate_score(first_rows, first_value, first_columns, last_value, last_row
     print(f"Laatste bord: {last_total_score}, {last_sum_of_remainders}, {last_value}")
 
 
-# print(play_bingo(*split_boards(get_boards('Test_Input.txt'))))
 calculate_score(*play_bingo(*split_boards(get_boards('Puzzle_Input.txt'))))
 
