@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AdventOfCode-2021.iml" filepath="$PROJECT_DIR$/.idea/AdventOfCode-2021.iml" />
+      <module fileurl="file://$USER_HOME$/OneDrive - Universiteit Antwerpen/UA/'21-'22 - Bach 3 + Ma1/Data Mining/Groepswerk/Data Mining Challenge/.idea/Data Mining Challenge.iml" filepath="$USER_HOME$/OneDrive - Universiteit Antwerpen/UA/'21-'22 - Bach 3 + Ma1/Data Mining/Groepswerk/Data Mining Challenge/.idea/Data Mining Challenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python-Tutorials/.idea/Python-Tutorials.iml" filepath="$PROJECT_DIR$/../Python-Tutorials/.idea/Python-Tutorials.iml" />
     </modules>
   </component>
 </project>
